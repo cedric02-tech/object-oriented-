@@ -7,6 +7,8 @@ from enum import Enum
 class LoanStatus(Enum):
     ACTIVE = "active"
     OVERDUE = "overdue"
+    RETURNED = "returned"
+    LOST = "lost"
 
 
 class User(ABC):
