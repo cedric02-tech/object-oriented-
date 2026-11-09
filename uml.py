@@ -74,7 +74,7 @@ class Item(ABC):
 class Book(Item):
     loan_days = 14
     daily_fine = 500
-    replacement_cost = 30,000
+    replacement_cost = 30_000
 
     def care_note(self):
         return "No writing, no folded pages, keep it dry."
@@ -83,7 +83,7 @@ class Book(Item):
 class Pen(Item):
     loan_days = 3
     daily_fine = 200
-    replacement_cost = 1,500
+    replacement_cost = 1_500
 
     def care_note(self):
         return "Cap it after use."
@@ -100,9 +100,9 @@ class Pencil(Item):
 
 class Calculator(Item):
     loan_days = 7
-    daily_fine = 1,000
-    replacement_cost = 45,000
-    deposit = 5,000
+    daily_fine = 1_000
+    replacement_cost = 45_000
+    deposit = 5_000
 
     def care_note(self):
         return "Return it with batteries in and the cover on."
@@ -110,9 +110,9 @@ class Calculator(Item):
 
 class PhoneCharger(Item):
     loan_days = 2
-    daily_fine = 1,000
-    replacement_cost = 20,000
-    deposit = 5,000
+    daily_fine = 1_000
+    replacement_cost = 20_000
+    deposit = 5_000
 
     def care_note(self):
         return "Return the plug AND the cable."
@@ -120,9 +120,9 @@ class PhoneCharger(Item):
 
 class ElectricIron(Item):
     loan_days = 1
-    daily_fine = 2,000
-    replacement_cost = 60,000
-    deposit = 10,000
+    daily_fine = 2_000
+    replacement_cost = 60_000
+    deposit = 10_000
 
     def care_note(self):
         return "Unplug it, let it cool, empty the water."
